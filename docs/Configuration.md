@@ -107,7 +107,7 @@ Set specific mailer options, such as SMTP SSL and authentication, passed directl
 
 The `connectionTimeout`, `greetingTimeout` and `socketTimeout` properties are all expressed in milliseconds.
 
-You can also use `mail_options` to use local [sendmail](https://nodemailer.com/transports/sendmail/), if you have that configured on your server.  To do this, set the following properties, and tune as needed:
+You can also use `mail_options` to use local [sendmail](https://nodemailer.com/transports/sendmail), if you have that configured on your server.  To do this, set the following properties, and tune as needed:
 
 ```js
 "mail_options": {
@@ -351,7 +351,7 @@ This property only takes effect if [web_direct_connect](Configuration.md#web_dir
 
 ### socket_io_transports
 
-This is an advanced configuration property that you will probably never need to worry about.  This allows you to customize the [socket.io transports](https://socket.io/docs/client-api/) used to connect to the server for real-time updates.  By default, this property is set internally to an array containing the `websocket` transport only, e.g.
+This is an advanced configuration property that you will probably never need to worry about.  This allows you to customize the [socket.io transports](https://socket.io/docs/v4/client-options/#transports) used to connect to the server for real-time updates.  By default, this property is set internally to an array containing the `websocket` transport only, e.g.
 
 ```js
 "socket_io_transports": ["websocket"]
